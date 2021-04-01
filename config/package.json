@@ -1,0 +1,21 @@
+{
+  "name": "Frame",
+  "description": "Frame Framework",
+  "private": true,
+  "author": "Cristian Ferrari",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production --env production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "javascript-brunch": "^2.0.0",
+    "postcss-brunch": "^0.5",
+    "sass-brunch": "^2",
+    "uglify-js-brunch": "^2"
+  }
+}
