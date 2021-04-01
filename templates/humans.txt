@@ -1,0 +1,8 @@
+/* Prey-assets was made by Prey, a global software company that focuses in solving real-life problems */
+/* preyproject.com */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery
+  Software: Sublime, Git, Sass

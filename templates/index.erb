@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= current_page.data.title %></title>
+    <title><%= current_page.data.title || "Default" %></title>
+    <%= stylesheet_link_tag "styles" %>
+    <%= stylesheet_link_tag "theme" %>
+    <%= partial "styles" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= partial "scripts" %>
+    <%= javascript_include_tag "scripts" %>
+  </body>
+</html>
