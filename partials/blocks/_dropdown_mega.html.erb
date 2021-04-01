@@ -1,0 +1,51 @@
+---
+layout: false
+---
+
+<div class="dropdown-panel">
+  <div class="container fluid">
+  <div class="section slim four columns">
+
+    <div class="column">
+      <div class="bloc" style="--spacing: 0 1rem; margin-bottom: 1rem;">
+        <h3>Decoración</h3>
+      </div>
+      <ul class="menu">
+        <% 6.times do %>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <%= lorem.words 2 %>
+              <i class="icon-arrow-right right">&nbsp;</i>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="column">
+      <div class="bloc" style="--spacing: 0 1rem; margin-bottom: 1rem;">
+        <h3>Iluminación</h3>
+      </div>
+      <ul class="menu">
+        <% 6.times do %>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <%= lorem.words 2 %>
+              <i class="icon-arrow-right right">&nbsp;</i>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="column">
+      <%= partial "partials/component/block_content", :locals => { :background => "url(https://r.btcdn.co/2946/original/415993-slider-2.jpg)" } %>
+    </div>
+
+    <div class="column">
+      <%= partial "partials/component/block_content", :locals => { :background => "url(https://r.btcdn.co/2946/original/415993-slider-2.jpg)" } %>
+    </div>
+
+  </div>
+  </div>
+</div>

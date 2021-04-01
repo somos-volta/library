@@ -1,0 +1,49 @@
+---
+layout: false
+---
+
+<div class="dropdown-panel">
+  <div class="stack align-items-stretch">
+
+    <div class="panel">
+      <div class="bloc" style="--color: #FDF2D5;">
+        <h2>Decoración</h2>
+      </div>
+      <ul class="menu">
+        <% 5.times do %>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <%= lorem.words 2 %>
+              <i class="icon-arrow-right right">&nbsp;</i>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <div class="bloc" style="--color: #EFEDFD;">
+        <h2>Iluminación</h2>
+      </div>
+      <ul class="menu">
+        <% 5.times do %>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <%= lorem.words 2 %>
+              <i class="icon-arrow-right right">&nbsp;</i>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="panel bg-dark">
+      <%= partial "partials/component/block_content", :locals => { :background => "url(https://r.btcdn.co/2946/original/415993-slider-2.jpg)" } %>
+    </div>
+
+    <div class="panel bg-darker">
+      <%= partial "partials/component/block_content", :locals => { :background => "url(https://r.btcdn.co/2946/original/415993-slider-2.jpg)" } %>
+    </div>
+
+  </div>
+</div>

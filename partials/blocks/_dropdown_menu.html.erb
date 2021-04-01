@@ -1,0 +1,63 @@
+---
+layout: false
+---
+
+<ul class="dropdown-menu">
+  <%# {% for link in menus.catalog.links %}
+  <% 6.times do
+    <li class="menu-item">
+      <a class="menu-link" href="#">
+        <%= lorem.words 2
+        <i class="icon-arrow-right right">&nbsp;</i>
+      </a>
+    </li>
+  <%# end
+  <%# {% endfor %} %>
+
+  <li class="menu-item">
+    <a class="menu-link" href="/">
+      Home <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a class="menu-link" href="/products">
+      Products <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a class="menu-link" href="/product">
+      Product <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a class="menu-link" href="/cart">
+      Cart <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a class="menu-link" href="/cart-empty">
+      Cart empty <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+
+  <li class="menu-item">
+    <a class="menu-link" href="/page">
+      Page <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+  <li class="menu-item">
+    <a class="menu-link" href="/contact">
+      Contact <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+
+  <li class="menu-divider">
+    <hr/>
+  </li>
+
+  <li class="menu-item">
+    <a class="menu-link" href="/components">
+      Components <i class="icon-arrow-right right">&nbsp;</i>
+    </a>
+  </li>
+</ul>
