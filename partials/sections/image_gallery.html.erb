@@ -1,0 +1,29 @@
+<section id="categories-home-1" class="section image-gallery">
+  <div class="container">
+
+    <h2 class="section-title text-center"><%= data.text.titles.categories %></h2>
+
+    <div class="gallery-container gallery-active" data-min-item-width="200" data-max-items="5" data-min-items="2" data-horiz-margin="40" style="overflow: hidden; direction: ltr; cursor: -webkit-grab;">
+
+      <div class="REMOVE" style="width: 1770px; transition: all 200ms ease-out 0s; transform: translate3d(0px, 0px, 0px);">
+
+        <% items.each do |item| %>
+          <div class="REMOVE" style="float: left; width: 12.5%;">
+            <%= partial  "partials/component/#{component}", :locals => { :item => item } %>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+
+    <div class="gallery-navigation">
+      <div class="gallery-button prev on-middle-left" role="button">
+        <%= partial  "partials/icon/prev.svg" %>
+      </div>
+      <div class="gallery-button next on-middle-right" role="button">
+        <%= partial  "partials/icon/next.svg" %>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,34 @@
+<section class="section image-and-text-section">
+  <div class="container">
+    <div class="columns align-items-center">
+
+      <%# {% if section.image_position == 'left' %} %>
+        <div class="column width-50">
+          <%# <img src="{{ section.image_url | default: 'https://via.placeholder.com/500x300?text=Elige+una+imagen' }}" /> %>
+          <img src="https://via.placeholder.com/500x300?text=Elige+una+imagen" />
+        </div>
+      <%# {% endif %} %>
+
+      <div class="column width-50">
+        <%#
+        <h2 style="margin-bottom: 20px">{{ section.title }}</h2>
+        <p>{{ section.text }}</p>
+        {% if section.link_url %}
+          <a href="{{ section.link_url }}"
+             class="secondary button">{{ section.link_text | default: 'Leer más' }}</a>
+        {% endif %}
+        %>
+        <h2 style="margin: 1rem 0;">Bienvenido a tu tienda</h2>
+        <p>Aquí es donde destacas tu línea de productos con una buena imagen, en alta resolución. El link puede llevar a cualquier lugar de tu tienda.</p>
+        <a href="#" class="button secondary">Leer mas</a>
+      </div>
+
+      <%# {% if section.image_position == 'right' %}
+        <div class="width-50">
+          <%# <img src="{{ section.image_url | default: 'https://via.placeholder.com/500x300?text=Elige+una+imagen' }}" />
+        </div>
+      <%# {% endif %} %>
+
+    </div>
+  </div>
+</section>

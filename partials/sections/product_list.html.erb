@@ -1,0 +1,8 @@
+<section class="section product-list-section bg-lighter">
+	<div class="container fluid">
+		<h2 class="section-title text-center"><%= data.text.product_list.title %></h2>
+		<ul class="products grid-list grid-list-<%= data.text.product_list.max_items_per_row %>">
+			<%= partial  "partials/component/product_item" %>
+		</ul>
+	</div>
+</section>

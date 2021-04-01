@@ -1,0 +1,27 @@
+<section class="gallery slide-gallery">
+
+  <div class="gallery-container clearfix" style="overflow: hidden; direction: ltr; cursor: -webkit-grab;">
+
+    <div class="REMOVE" style="width: calc(100vw * 4); transition: all 200ms ease-out 0s; transform: translate3d(0px, 0px, 0px);">
+      <% items.each do |item| %>
+
+        <div class="REMOVE" style="float: left; width: 25%;">
+        <%= partial "partials/component/#{component}", :locals => { :item => item } %>
+        </div>
+
+      <% end %>
+    </div>
+
+  </div>
+
+
+  <div class="gallery-navigation on-bottom-right">
+    <div class="gallery-button prev" role="button">
+      <%= partial "partials/icon/prev.svg" %>
+    </div>
+    <div class="gallery-button next" role="button">
+      <%= partial "partials/icon/next.svg" %>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,35 @@
+---
+layout: false
+---
+
+<div id="search" class="modal on-right">
+
+	<a class="close-button close-modal" href="#search" title="Close">
+		<span class="sr-only">Cerrar</span>
+	</a>
+
+	<div class="modal-header">
+		<input class="input small" type="text" id="input-search" name="input-search" size="30" value="" placeholder="Escribe para buscar">
+	</div>
+
+	<div class="modal-body">
+		<div id="search-default" hidden>
+			<div class="bloc">
+				<h4>Escribe el nombre de un producto <br/>y presiona enter para buscar."</h4>
+			</div>
+		</div>
+
+		<div id="search-empty" hidden>
+			<div class="bloc align-items-center bg-light">
+				<h3>No hay resultados para "texto"</h3>
+				<a href="#" class="button secondary">Mira nuestros productos</a>
+			</div>
+		</div>
+
+		<div id="search-resoults" >
+			<h3>Tienes 4 resultados para "texto"</h3>
+			<%= partial "partials/collection/search" %>
+		</div>
+	</div>
+
+</div>
