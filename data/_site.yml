@@ -1,0 +1,23 @@
+# Global site info
+logo:           ""
+name:           "<span class='text-primary'>People<span class='font-light'>First<span></span>"
+# Estos dos podrían estar en locales
+description:    "Somos una empresa de consultoría experta en cultura y desarrollo organizacional, cuya misión es lograr la felicidad de las personas en el trabajo."
+path_prefix:    "/nosotros"
+
+# Estos también podría estar en locales
+contact:
+  email:        "consultoria@peoplefirst.cl"
+  phone:        "+56 9 3509 1164"
+  address:      "Av. Kennedy 7500,Of 603. Vitacura, Santiago de Chile."
+  schedule:     "Abierto de 10 a 18 hrs."
+
+whatsapp:
+  # Estos también podría estar en locales
+  title:        "Estamos en whatsapp!"
+  url:          "https://api.whatsapp.com/send?phone=56935091164&text=Hola!%20Necesito%20mas%20informaci%C3%B3n"
+
+social:
+  linkedin:     "https://cl.linkedin.com/company/peoplefirst-consulting-&-training"
+  instagram:    "https://www.instagram.com/peoplefirstchile/"
+  facebook:     "https://www.facebook.com/pages/category/Local-Service/PeopleFirst-Chile-117625909959530/"

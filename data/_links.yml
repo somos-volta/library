@@ -1,0 +1,54 @@
+# Links de la plataforma
+# (actualizar con Middleman Navigation Tree)
+
+informacion:
+  title:                           "Sobre nosotros"
+  url:                             "/nosotros"
+inicio:
+  title:                           "Inicio"
+  url:                             "/"
+nosotros:
+  title:                           "Nosotros"
+  url:                             "/nosotros"
+insights:
+  title:                           "Expert Insights"
+  url:                             "/insights"
+  unete:
+  title:                           "Unete!"
+  url:                             "/unete"
+contacto:
+  title:                           "Contacto"
+  url:                             "/contacto"
+email:
+  title:                           "consultoria@peoplefirst.cl"
+  url:                             "mailto:consultoria@peoplefirst.cl"
+telefono:
+  title:                           "+56 9 3509 1164"
+  url:                             "tel:+56226569413"
+direccion:
+  title:                           "Av. Kennedy 7500,Of 603. Vitacura, Santiago de Chile."
+horario:
+  title:                           "Abierto de 10 a 18 hrs."
+servicios:
+  title:                           "Lo que hacemos"
+  url:                             "/servicios"
+gestion-de-clima:
+  title:                           "Gestión de clima"
+  description:                     "Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+  url:                             "/servicios/gestion-de-clima"
+gestion-de-talento:
+  title:                           "Gestión de talento y desempeño"
+  description:                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  url:                             "/servicios/gestion-de-talento-y-desempeno"
+gestion-del-reconocimiento:
+  title:                           "Gestión del reconocimiento"
+  description:                     "Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+  url:                             "/servicios/gestion-del-reconocimiento"
+gestion-integral-do:
+  title:                           "Gestión integral DO"
+  description:                     "Maecenas faucibus mollis interdum."
+  url:                             "/servicios/gestion-integral-do"
+objetivos-y-resultados-clave:
+  title:                           "OKR"
+  description:                     "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
+  url:                             "/servicios/okr-objetivos-y-resultados-clave"

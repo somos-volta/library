@@ -1,0 +1,32 @@
+# Configuración de menús a partir de los links
+
+footer:
+  - informacion:
+    - inicio
+    - nosotros
+    - insights
+    - unete
+    - contacto
+  - servicios:
+    - gestion-de-clima
+    - gestion-de-talento
+    - gestion-del-reconocimiento
+    - gestion-integral-do
+    - objetivos-y-resultados-clave
+  - contacto:
+    - email
+    - telefono
+    - direccion
+    - horario
+
+header:
+  - inicio
+  - nosotros
+  - servicios:
+    - gestion-de-clima
+    - gestion-de-talento
+    - gestion-del-reconocimiento
+    - gestion-integral-do
+    - objetivos-y-resultados-clave
+  - insights
+  - unete
