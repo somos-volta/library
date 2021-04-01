@@ -1,0 +1,25 @@
+<% wrap_layout :base do %>
+
+  <%= partial "sections/insights-hero" %>
+
+  <main class="main section slim">
+
+    <div class="container medium">
+      <header class="mb-8">
+        </p>
+        <h1 class="type-display3"><%= current_article.title %></h1>
+        <p class="text-secondary">
+          -
+          Publicado por <%= current_page.data.author %>
+          <%= current_page.data.categorie %>
+        </p>
+      </header>
+      <article class="content">
+        <%= yield %>
+      </article>
+    </div>
+  </main>
+
+  <%= partial "sections/call-share" %>
+
+<% end %>

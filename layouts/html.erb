@@ -1,0 +1,21 @@
+<!doctype html>
+<html data-theme="<%= data.theme.name %>" data-mode="<%= data.theme.default_mode %>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || data.site.name %></title>
+    <meta name="description" content="<%= data.site.description%>">
+
+    <%= favicon_tag "favicon.ico" %>
+    <%= stylesheet_link_tag "styles" %>
+    <%= stylesheet_link_tag "theme" %>
+    <%= partial "styles" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= partial "scripts" %>
+    <%= javascript_include_tag "scripts" %>
+  </body>
+</html>
+

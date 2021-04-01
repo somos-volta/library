@@ -1,0 +1,9 @@
+<% wrap_layout :base do %>
+
+  <main class="section">
+    <div class="container <%= current_page.data.container || '' %> content">
+      <%= yield %>
+    </div>
+  </main>
+
+<% end %>
