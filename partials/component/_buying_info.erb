@@ -1,0 +1,55 @@
+<div class="buying-info text-secondary type-footnote">
+
+  <div id="payment-methods">
+    <div><strong>Formas de pago</strong></div>
+    <p>Transferencia bancaria, Servipag, Webpay Plus</p>
+    <p></p>
+  </div>
+
+  <br/>
+
+  <div id="shipping">
+    <div><strong>Opciones de entrega</strong></div>
+    <p class="shipping-calc">
+      <a class="show-shipping-calc" href="#shipping-calc">Ver costos de envío para este producto</a>
+    </p>
+    <ul class="list-with-icons">
+      <li>
+        <%= partial  "partials/icon/delivery-location.svg" %>
+        <div class="available"><small>Disponible</small></div>
+        <div>Despacho a domicilio</div>
+      </li>
+      <li>
+        <%= partial  "partials/icon/delivery-pickup.svg" %>
+        <div class="available"><small>Disponible</small></div>
+        <div>Retiro en tienda</div>
+      </li>
+      <li>
+        <%= partial  "partials/icon/delivery-store.svg" %>
+        <div class="unavailable"><small>No disponible</small></div>
+        <div>Producto en tienda</div>
+      </li>
+    </ul>
+  </div>
+
+  <br/>
+
+  <div id="inquiries">
+    <p><strong>¿Tienes dudas o consultas?</strong></p>
+    <ul class="list-with-icons">
+      <li>
+        <%= partial  "partials/icon/whatsapp.svg" %>
+        <div class="text-secondary" style="line-height: 1;"><small>Escribenos por WhatsApp</small></div>
+        <div>+56 9 6577 1233</div>
+        <div class="text-secondary"><small></small></div>
+      </li>
+      <li>
+        <%= partial  "partials/icon/email.svg" %>
+        <div class="text-secondary" style="line-height: 1;"><small>Mandanos un mail</small></div>
+        <div>contacto@tutienda.com</div>
+      </li>
+    </ul>
+  </div>
+
+
+</div>

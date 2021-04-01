@@ -1,0 +1,11 @@
+<%# {% add_to_cart %} %>
+<form class="add-to-cart" action="/cart/cart_items" method="post" data-bootic-cart-add="add" data-bootic-productid="207199">
+	<input type="hidden" name="cart_item[variant_id]" value="454678">
+	<!-- these buttons are hidden by default, but feel free to unhide them via CSS -->
+	<div class="quantity_control">
+		<button class="button quantity_button decrease_quantity" onclick="this.nextElementSibling.stepDown(); event.preventDefault()">−</button>
+		<input type="number" name="cart_item[quantity]" size="4" min="1" value="1" class="cart_item_quantity">
+		<button class="button quantity_button increase_quantity" onclick="this.previousElementSibling.stepUp(); event.preventDefault()">+</button>
+	</div>
+	<input type="submit" value="Agregar al carro" class="button line submit" data-out-of-stock="No hay más" data-in-cart="en el carro" data-org-copy="Agregar al carro">
+</form>

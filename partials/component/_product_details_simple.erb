@@ -1,0 +1,39 @@
+<%# {% if product.has_attributes %} %>
+<div class="product-details">
+  <div id="product-description">
+    <%# {{ product.description | format_text }} %>
+    <h5 hidden><strong>Descripción</strong></h5>
+    <p>Este es un producto de ejemplo en Bootic. Aquí puedes poner tu propia descripción del producto.</p>
+  </div>
+  <div id="product-attributes">
+    <%# <ul>
+      {% for field in product.attributes.present %}
+      <li class="attribute-{{field.key}}">
+        <strong>{{ field.name }}:</strong>
+        <span>{{ field.value }}</span>
+      </li>
+      {% endfor %}
+    </ul> %>
+    <h5 hidden><strong>Características</strong></h5>
+    <ul class="attribute-list">
+      <li class="attribute-material">
+        <strong>Material:</strong>
+        <span>Plástico</span>
+      </li>
+      <li class="attribute-ampolleta">
+        <strong>Tipo de ampolleta:</strong>
+        <span>E27</span>
+      </li>
+      <li class="attribute-de_pie">
+        <strong>De pie:</strong>
+        <span>No</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<%# {% else %}
+  <div id="product-description" style="margin-top: 30px">
+    <%# {{ product.description | format_text }}
+  </div>
+<%# {% endif %} %>

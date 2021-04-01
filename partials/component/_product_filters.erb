@@ -1,0 +1,70 @@
+<div>
+  <h3><%= data.text.titles.filters %></h3>
+
+  <form action="/search" method="get" class="product-filters">
+    <input type="hidden" name="_template" value="products" />
+
+    <%# {% if collection %} %>
+      <input type="hidden" name="collections" value="{{ collection.slug }}" />
+    <%# {% endif %} %>
+
+    <%# {% if product_type %} %>
+      <input type="hidden" name="product_types" value="{{ product_type.slug }}" />
+    <%# {% endif %} %>
+
+    <%# <input style="width: 20%; margin-right: 5px" type="search" name="q" value="{{ query }}" placeholder="Buscar:" /> %>
+
+    <label for="price-range-select" class="search-filter-label">Precio</label>
+    <select id="price-range-select" class="search-filter" name="price_range">
+      <option value="">Todos</option>
+      <option <%# {% if params.price_range == "-15000"> <%# %}selected{% endif %} %> value="-15000">De 0 a $15.000</option>
+      <option <%# {% if params.price_range == "15000-30000" <%# %}selected{% endif %} %> value="15000-30000">De $15.000 a $30.000</option>
+      <option <%# {% if params.price_range == "30000-50000" <%# %}selected{% endif %} %> value="30000-50000">De $30.000 a $50.000</option>
+      <option <%# {% if params.price_range == "50000-100000" <%# %}selected{% endif %} %> value="50000-100000">De $50.000 a $100.000</option>
+      <option <%# {% if params.price_range == "100000-"> <%# %}selected{% endif %} %> value="100000-">Más de $100.000</option>
+    </select>
+
+    <%# {% comment %}
+    <label for="tags-select" class="search-filter-label">Ver sólo</label>
+    <select class="search-filter" id="tags-select" name="tags" style="width: 190px; margin: 0 20px 0 7px">
+      <option value="">Todos los productos</option>
+      {% if collection %}
+        {% for tag in collection.tags %}
+          <option {% if params.tags == tag %}selected{% endif %} value="{{ tag }}">{{ tag }}</option>
+        {% endfor %}
+      {% else %}
+        {% for tag in tags %}
+          <option {% if params.tags == tag %}selected{% endif %} value="{{ tag }}">{{ tag }}</option>
+        {% endfor %}
+      {% endif %}
+    </select>
+    <%# {% endcomment %} %>
+
+    <label for="sort-select" class="search-filter-label">Ordenar por</label>
+    <select id="sort-select" class="search-filter" name="sort">
+      <option value="">Relevancia</option>
+      <option {% if params.sort == "title.asc" %}selected{% endif %} value="title.asc">Nombre</option>
+      <option {% if params.sort == "price.asc" %}selected{% endif %} value="price.asc">Precio de menor a mayor</option>
+      <option {% if params.sort == "price.desc" %}selected{% endif %} value="price.desc">Precio de mayor a menor</option>
+      <option {% if params.sort == "discount_percentage.asc" %}selected{% endif %} value="discount_percentage.asc">De menor a mayor descuento</option>
+      <option {% if params.sort == "discount_percentage.desc" %}selected{% endif %} value="discount_percentage.desc">De mayor a menor descuento</option>
+    </select>
+
+    <label for="per-page-select" class="hidden-tablet search-filter-label">Productos por página</label>
+    <select id="per-page-select" class="hidden-tablet search-filter" name="per_page">
+      <option {% if params.per_page == "6" %}selected{% endif %} value="6">6</option>
+      <option {% if params.per_page == "12" or params.per_page == nil %}selected{% endif %} value="12">12</option>
+      <option {% if params.per_page == "18" %}selected{% endif %} value="18">18</option>
+      <option {% if params.per_page == "27" %}selected{% endif %} value="27">27</option>
+      <option {% if params.per_page == "36" %}selected{% endif %} value="36">36</option>
+    </select>
+  </form>
+
+  <script type="text/javascript">
+    Bootic.require('Util', function(util) {
+      util.on('.product-filters', 'change', '.search-filter', function() {
+        this.form.submit();
+      })
+    })
+  </script>
+</div>

@@ -1,0 +1,31 @@
+<div class="product-heading">
+  <h2 class="product-title">
+    <div class="product-vendor"></div>
+    <div class="product-model">Zetti</div>
+    <%# {% if product.vendor.name != shop.name %}
+      {{ product.vendor.name }}
+    {% endif %}
+    {{ product.model }} %>
+  </h2>
+
+  <%# <big class="product-price">
+    {% unit_price %}
+  </big> %>
+  <big class="product-price">
+    <span class="bootic-price">$75.000</span>
+    <span class="bootic-price-comparison-box price" style="display: inline-block">
+      <span class="bootic-price-comparison-label">Antes</span>
+      <strike class="bootic-price-comparison">$90.000</strike>
+    </span>
+  </big>
+
+  <%# {% if product.variants_count < 2 %}
+    <div class="product-stock">
+      <%# {% stock_status %}
+    </div>
+  <%# {% endif %} %>
+  <div class="product-stock">
+
+    <p class="units-in-stock low-stock">Pocas unidades disponibles</p>
+  </div>
+</div>

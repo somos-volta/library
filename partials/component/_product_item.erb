@@ -1,0 +1,44 @@
+<% data.text.product_items.each do |item| %>
+  <li class="item-<%= item.counter %> product-item">
+
+    <% if item.has_price_comparison %>
+      <div class="discount-tag"><span><%= item.price_comparison_percentage %></span></div>
+    <% end %>
+
+    <a href="<%= item.url %>" class="product-image zoom-in">
+      <img src="<%= item.first_image %>" alt="<%= item.model %>" />
+      <%# <div class="cover"><big><i class="icon-android-search"></i></big></div> %>
+    </a>
+
+    <div class="product-meta">
+
+      <h3 class="product-model">
+        <a href="<%= item.url %>" title="<%= item.model %>">
+          <% if item.vendor_name != data.text.shop.name %>
+            <%= item.vendor_name %>
+          <% end %>
+          <%= item.model %>
+        </a>
+      </h3>
+
+      <span class="right stock">
+        <%= item.stock_status_for %>
+      </span>
+
+      <span class="prices">
+        <%#= item.unit_price_for %>
+        <span class="bootic-price">$45.000</span>
+        <span class="bootic-price-comparison-box price" style="display: none">
+          <span class="bootic-price-comparison-label">Antes</span>
+          <strike class="bootic-price-comparison">
+          </strike>
+        </span>
+      </span>
+
+      <% if data.theme.options.add_to_cart_in_product_list %>
+        <%= partial  "partials/component/add_to_cart" %>
+      <% end %>
+
+    </div>
+  </li>
+<% end %>

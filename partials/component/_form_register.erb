@@ -1,0 +1,22 @@
+<form class="bootic-register-form bootic_form" action="/register" method="post">
+  <input class="uber_required" type="text" name="email_address" value="" hidden>
+
+  <div class="bootic_row block name_row">
+    <label for="bootic-register-name">Nombre</label>
+    <input id="bootic-register-name" placeholder="ej: Catalina Pérez" type="text" name="form[name]">
+  </div>
+
+  <div class="bootic_row block email_row">
+    <label for="bootic-register-email">Email</label>
+    <input id="bootic-register-email" placeholder="ej: usuario@email.com" type="email" name="form[email]" required="">
+  </div>
+
+  <div class="bootic_row block phone_row">
+    <label for="bootic-register-phone">Número de teléfono (Opcional)</label>
+    <input id="bootic-register-phone" placeholder="ej: 987 654 321" type="number" name="form[phone_number]">
+  </div>
+
+  <div class="controls">
+    <button class="button primary" type="submit">Inscribirme</button>
+  </div>
+</form>

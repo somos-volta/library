@@ -1,0 +1,28 @@
+<%# {% if product.has_images %} %>
+<div id="product-images">
+  <%# {% for image in product.images limit:1 %} %>
+    <div id="main-image" class="easyzoom easyzoom--overlay">
+      <a id="product-image-1-display" href="{{ image | resize: '1000x' }}">
+        <img src="<%= data.text.product.image_2 %>" alt="{{ product.model }}" />
+      </a>
+    </div>
+  <%# {% endfor %} %>
+
+  <%# {% if product.image_count > 1 %} %>
+  <ul class="thumbs on-botton-left">
+
+    <% data.text.product.images.each do |thumbnail| %>
+      <%# {% for image in product.images %} %>
+      <li id="product-image-nnnn" class="product-asset">
+        <a class="zoom-in" href="{{ image | resize: '1000x' }}" data-show-img="{{ image | resize: '690x' }}">
+          <img src="<%= thumbnail %>" alt="{{ product.model }}" />
+        </a>
+      </li>
+      <%# {% endfor %} %>
+    <% end %>
+
+  </ul><!-- /thumbs -->
+  <%# {% endif %} %>
+
+</div>
+<%# {% endif %} %>
