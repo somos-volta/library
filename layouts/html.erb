@@ -1,11 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html data-theme="<%= data.theme.name %>" data-mode="<%= data.theme.default_mode %>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= current_page.data.title || data.site.name %></title>
-    <meta name="description" content="<%= data.site.description%>">
+
+    <title><%= data.site.title %></title>
+    <meta name="description" content="<%= data.site.description %>">
+
+    <%-#<title><%= current_page_title</title> %>
+    <%-#<meta name="description" content="<%= current_page_description "> %>
+    <%-#= partial "meta/base" %>
+    <%-#= partial "meta/social" %>
+    <%-#= partial "meta/mobile" %>
+    <%-#= partial "meta/brand" %>
+    <%-#= partial "meta/tricks" %>
+
+    <%- if data.site.social_tags %>
+      <%= partial "meta/ogg" %>
+    <% end %>
 
     <%= favicon_tag "favicon.ico" %>
     <%= stylesheet_link_tag "styles" %>

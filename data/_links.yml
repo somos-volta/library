@@ -13,7 +13,7 @@ nosotros:
 insights:
   title:                           "Expert Insights"
   url:                             "/insights"
-  unete:
+unete:
   title:                           "Unete!"
   url:                             "/unete"
 contacto:
@@ -32,23 +32,23 @@ horario:
 servicios:
   title:                           "Lo que hacemos"
   url:                             "/servicios"
-gestion-de-clima:
+gestion_de_clima:
   title:                           "Gestión de clima"
   description:                     "Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
   url:                             "/servicios/gestion-de-clima"
-gestion-de-talento:
+gestion_de_talento:
   title:                           "Gestión de talento y desempeño"
   description:                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   url:                             "/servicios/gestion-de-talento-y-desempeno"
-gestion-del-reconocimiento:
+gestion_del_reconocimiento:
   title:                           "Gestión del reconocimiento"
   description:                     "Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
   url:                             "/servicios/gestion-del-reconocimiento"
-gestion-integral-do:
+gestion_integral_do:
   title:                           "Gestión integral DO"
   description:                     "Maecenas faucibus mollis interdum."
   url:                             "/servicios/gestion-integral-do"
-objetivos-y-resultados-clave:
+objetivos_y_resultados_clave:
   title:                           "OKR"
   description:                     "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
   url:                             "/servicios/okr-objetivos-y-resultados-clave"

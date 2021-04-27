@@ -15,9 +15,9 @@
 
 -# For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
 -# IOS Shorter App title for homescreen (max 13 chars)
-%meta{ name: "apple-mobile-web-app-title",            content: "" }
-%meta{ name: "apple-mobile-web-app-capable",          content: "yes" }
-%meta{ name: "apple-mobile-web-app-status-bar-style", content: "black" }
+%meta{ name: "apple-mobile-web-app-title",            content: "#{data.config.app_title}" }
+%meta{ name: "apple-mobile-web-app-capable",          content: "#{data.config.app_capable}" }
+%meta{ name: "apple-mobile-web-app-status-bar-style", content: "#{data.config.bar_style}" }
 
 -# Disable automatic phone number detection.
 %meta{ name: "format-detection", content: "telephone=no" }

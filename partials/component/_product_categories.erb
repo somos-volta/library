@@ -1,7 +1,7 @@
 <div>
-  <h3><%= data.text.titles.categories %></h3>
+  <h3 class="mt-8 mb-6"><%= data.text.titles.categories %></h3>
 
-  <a class="toggle-open-element button secondary small visible-phone" href="#category-list" onclick="toggleClass('#category-list', 'visible'); return false">Ver categorías</a>
+  <a class="js-toggle-open-element button secondary small visible-phone" href="#category-list" onclick="toggleClass('#category-list', 'visible'); return false">Ver categorías</a>
 
   <ul id="category-list">
     <% data.text.categories.items.each do |item| %>

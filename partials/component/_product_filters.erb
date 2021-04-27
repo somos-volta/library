@@ -1,5 +1,6 @@
 <div>
-  <h3><%= data.text.titles.filters %></h3>
+
+  <h3 class="mt-8 mb-6"><%= data.text.titles.filters %></h3>
 
   <form action="/search" method="get" class="product-filters">
     <input type="hidden" name="_template" value="products" />
@@ -61,10 +62,7 @@
   </form>
 
   <script type="text/javascript">
-    Bootic.require('Util', function(util) {
-      util.on('.product-filters', 'change', '.search-filter', function() {
-        this.form.submit();
-      })
-    })
+    // Make filters work
   </script>
+
 </div>
